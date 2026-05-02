@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="space-y-6">
           <h1 className="text-4xl font-black leading-tight md:text-6xl">
             Find Your Perfect{" "}
-            <span className="text-[#F97316]">Companion</span> 🐶🐱
+            <span className="text-[#F97316]">Companion</span>
           </h1>
 
           <p className="text-lg leading-relaxed text-gray-600">

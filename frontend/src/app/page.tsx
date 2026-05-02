@@ -49,13 +49,49 @@ export default function HomePage() {
             ))}
           </div>
         </section>
-        <section className="grid gap-4 rounded-2xl bg-white p-6 md:grid-cols-3">
-          <div><p className="text-3xl font-black text-[#F97316]">240+</p><p>Total Animals Rescued</p></div>
-          <div><p className="text-3xl font-black text-[#F97316]">89</p><p>Adoptions This Year</p></div>
-          <div><p className="text-3xl font-black text-[#F97316]">170+</p><p>Happy Families</p></div>
+        <section className="mx-auto mt-12 grid max-w-7xl gap-6 rounded-3xl bg-white p-4 md:grid-cols-4">
+          {/* Card 1 */}
+          <div className="group flex h-40 flex-col items-center justify-center rounded-2xl bg-[#FFF7ED] text-center shadow-sm transition ">
+            <p className="text-4xl font-black text-[#F97316] transition-transform duration-200">
+              240+
+            </p>
+            <p className="mt-2 text-sm font-medium text-gray-600">
+              Total Animals Rescued
+            </p>
+          </div>
+          {/* Card 2 */}
+          <div className="group flex h-40 flex-col items-center justify-center rounded-2xl bg-[#FFF7ED] text-center shadow-sm transition ">
+            <p className="text-4xl font-black text-[#F97316] transition-transform duration-200">
+              89
+            </p>
+            <p className="mt-2 text-sm font-medium text-gray-600">
+              Adoptions This Year
+            </p>
+          </div>
+          {/* Card 3 */}
+          <div className="group flex h-40 flex-col items-center justify-center rounded-2xl bg-[#FFF7ED] text-center shadow-sm transition ">
+            <p className="text-4xl font-black text-[#F97316] transition-transform duration-200">
+              170+
+            </p>
+            <p className="mt-2 text-sm font-medium text-gray-600">
+              Happy Families
+            </p>
+          </div>
+          {/* Card 4 */}
+          <div className="group flex h-40 flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-[#F97316] to-orange-400 text-center text-white shadow-md transition ">
+            <p className="text-4xl font-black transition-transform duration-200  ">
+              6
+            </p>
+            <p className="mt-2 text-sm font-medium text-white/90">
+              Animals Available Now
+            </p>
+          </div>
+
         </section>
       </main>
-      <section id="about"> <Footer /></section>
+      <section id="about">
+        <Footer />
+      </section>
 
     </>
   );
