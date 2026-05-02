@@ -4,7 +4,7 @@ import { Animal } from "@/types/animal";
 
 export function AnimalCard({ animal }: { animal: Animal }) {
   return (
-    <article className="overflow-hidden rounded-2xl bg-[#FFF7ED] shadow-md">
+    <article className="overflow-hidden rounded-2xl bg-[#FFF7ED] shadow-md transition-transform duration-200 hover:scale-102">
       <img src={animal.imageUrl || ""} alt={animal.name} className="h-52 w-full object-cover" />
       <div className="space-y-3 p-5">
         <div className="flex items-center justify-between">
