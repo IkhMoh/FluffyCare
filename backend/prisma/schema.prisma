@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Animal {
+  id          Int      @id @default(autoincrement())
+  name        String
+  species     String
+  breed       String?
+  age         Int
+  gender      String
+  color       String?
+  weight      Float?
+  status      String
+  description String?
+  imageUrl    String?
+  healthNotes String?
+  arrivalDate DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([status])
+  @@index([species])
+  @@index([name])
+}
+
+model Admin {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String
+  name         String
+  createdAt    DateTime @default(now())
+}
