@@ -20,7 +20,6 @@ const animals = [
 
 async function main() {
   const passwordHash = await bcrypt.hash('Admin@12345', 10);
-
   await prisma.admin.upsert({
     where: { email: 'admin@fluffycare.com' },
     create: { email: 'admin@fluffycare.com', name: 'FluffyCare Admin', passwordHash },
