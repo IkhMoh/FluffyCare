@@ -80,7 +80,7 @@ export default function HomePage() {
           {/* Card 4 */}
           <div className="group flex h-40 flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-[#F97316] to-orange-400 text-center text-white shadow-md transition ">
             <p className="text-4xl font-black transition-transform duration-200  ">
-              6
+              8
             </p>
             <p className="mt-2 text-sm font-medium text-white/90">
               Animals Available Now
